@@ -16,7 +16,7 @@ export default function Home() {
     formData.append('pstFile', file)
 
     try {
-      const response = await fetch('http://localhost:3000/upload-pst', {
+      const response = await fetch('https://pst-api.onrender.com/upload-pst', {
         method: 'POST',
         body: formData,
       })
